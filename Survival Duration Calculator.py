@@ -1,0 +1,48 @@
+print('''
+            ***** Welcome To Survival Duration Calculator *****
+         ''')
+
+age = int(input("Whats your age? : "))
+print('''Please choose time unit: Use serial numbers only
+            1) Months
+            2) Weeks
+            3) Days
+            4) Hours
+            5) Minutes
+            6) Seconds''')
+choose=int(input('Please choose your command: '))
+if choose==1:
+        duration = age * 12
+        unit_name = "Months"
+        print(str(duration))
+        print(unit_name)
+if choose==2:
+    duration = age * 52
+    unit_name = "Weeks"
+    print(str(duration))
+    print(unit_name)
+if choose == 3:
+    duration = age * 365
+    unit_name = "Days"
+    print(str(duration))
+    print(unit_name)
+if choose==4:
+    duration = age *365 *24
+    unit_name = "Hours"
+    print(str(duration))
+    print(unit_name)
+if choose==5:
+    duration = age *365 *24 *60
+    unit_name = "Minutes"
+    print(str(duration))
+    print(unit_name)
+if choose==6:
+    duration = age *365 *24 *60 *60
+    unit_name = ("Seconds")
+    print(str(duration))
+    print(unit_name)
+
+
+print('''
+            ***** Thank You for using Survival Duration Calculator *****
+         ''')
